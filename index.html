@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore powerful gaming gear with Mind Gamer Bhaiya." />
+  <meta name="keywords" content="Gaming, PS5, Xbox, Mind Gamer Bhaiya, Gadgets" />
+  <meta name="author" content="Mind Gamer Bhaiya" />
+  <title>Mind Gamer Bhaiya</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+  <!-- Header/Nav -->
+  <header>
+    <div class="logo">🎮 Mind Gamer Bhaiya</div>
+   <!-- <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Consoles</a></li>
+        <li><a href="https://youtube.com/@mindgamerbhaiya" target="_blank">YouTube</a></li>
+      </ul>
+    </nav> -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search products..."
+      onkeyup="searchProducts()" />
+    </div>
+    <div class="social-links">
+        <a href="https://www.youtube.com/@MindGamerBHAIYA/posts" target="_blank" aria-label="YouTube"><img src="assets/images/youtube-profile.jpg" alt="YouTube"></a>
+        <a href="http://x.com/yourprofile" target="_blank" aria-label="X (Twitter)"><img src="assets/icons/x-twitter.svg" alt="X (Twitter)"></a>
+        </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav id="navMenu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="coming-soon.html">Games</a></li>
+        <li><a href="coming-soon.html">Consoles</a></li>
+        <li><a href="https://youtube.com/@mindgamerbhaiya" target="_blank">YouTube</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video autoplay muted loop class="bg-video">
+      <source src="assets/bg-video.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-content">
+      <h1 id="welcome-text"></h1>
+      <p>Level up with the latest gaming gear.</p>
+      <button onclick="scrollToProducts()">Explore Universe</button>
+    </div>
+  </section>
+
+  <!-- Product & Cart sections will be added later -->
+<section class="products glass">
+  <h2>🔥 Featured Gaming Gear</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="assets/images/ps5.png" alt="PS5 DualSense" />
+      <h3>PS5 DualSense</h3>
+      <p>$69.99</p>
+      <button onclick="addToCart('PS5 DualSense', 69.99)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/xbox.png" alt="Xbox Series X" />
+      <h3>Xbox Series X</h3>
+      <p>$499.99</p>
+      <button onclick="addToCart('Xbox Series X', 499.99)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/razer.png" alt="Razer Viper Ultimate" />
+      <h3>Razer Viper Ultimate</h3>
+      <p>$129.99</p>
+      <button onclick="addToCart('Razer Viper Ultimate', 129.99)">Add to Cart</button>
+    </div>
+  </div>
+</section>
+<section class="cart glass">
+  <h2>🛒 Your Cart</h2>
+  <ul id="cartItems"></ul>
+  <p id="total">Total: $0.00</p>
+  <button onclick="buyNow()">Buy Now</button>
+
+</section>
+  <!-- Star Canvas -->
+  <div id="bg-stars"></div>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mind Gamer Bhaiya. Powering your next victory.</p>
+  </footer>
+
+  <!-- Scripts -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+  <script src="script.js"></script>
+  <div id="toast-container"></div>
+  
+
+</body>
+</html>
